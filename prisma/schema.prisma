@@ -1,0 +1,18 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Reservation {
+  id        Int @id @default(autoincrement())
+  name      String
+  phone     String
+  service   String
+  date      String
+  time      String
+  createdAt DateTime @default(now())
+}
