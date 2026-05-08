@@ -11,7 +11,7 @@ function Navbar() {
         { name: "Home", href: "/" },
         { name: "Appointment", href: "/admin" },
         { name: "Reservation", href: "/reserve" },
-        { name: "Services", href: "/services" },
+        { name: "Services", href: "/" },
         { name: "Contact", href: "/contact" },
         { name: "About", href: "/about" }
     ]

@@ -10,17 +10,17 @@ import Link from 'next/link'
 const data = [
     {
         id:1,
-        title:"always fresh & always crispy & always hot",
+        title:"Clean fades with modern styling",
         image:"/slide1.jpg",
     },
     {
         id:2,
-        title:"Te deliver your order were ever you are i NY",
+        title:"Professional coloring for modern style",
         image:"/slide2.jpg",
     },
     {
         id:3,
-        title:"The best pizza for sare your family",
+        title:"Professional styling for modern men",
         image:"/slide3.jpg",
     },
 ];
