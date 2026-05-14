@@ -68,7 +68,7 @@ import { featuredItems } from '@/data';
           </h2>
 
           <span className="text-gray-400">
-            قیمت {item.price} تومان
+            Price {item.price} 
           </span>
         </div>
 
