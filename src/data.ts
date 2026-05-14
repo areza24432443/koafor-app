@@ -11,25 +11,25 @@ export const featuredItems: FeaturedItem[] = [
   {
     id: 1,
     title: " Haircut ",
-    price: "12,000 تومان",
+    price: "12,000 $",
     image: "/service/service-1.jpg",    
     },
     {
     id: 2,
     title: " Treaming",
-    price: "15,000 تومان",
+    price: "15,000 $",
     image: "/service/service-2.jpg",
     },
     {   
     id: 3,
     title: "SHAVING",
-    price: "20,000 تومان",
+    price: "20,000 $",
     image: "/service/service-3.jpg",
     },
     {
     id: 4,
     title: "  Coloring",
-    price: "25,000 تومان",
+    price: "25,000 $",
     image: "/service/service-4.jpg",
     },
     
