@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Reserve() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [service, setService] = useState("اصلاح مو");
+  const [service, setService] = useState("Hairsort");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
@@ -27,16 +27,16 @@ export default function Reserve() {
   });
 
   if (res.ok) {
-    alert("✅ رزرو با موفقیت ثبت شد");
+    alert("✅  successfully reserved"); 
 
-    // پاک کردن فرم
+    //   clear form fields
     setName("");
     setPhone("");
-    setService("اصلاح مو");
+    setService("Hairsort");
     setDate("");
     setTime("");
   } else {
-    alert("❌ خطا در ثبت رزرو");
+    alert("❌ Error occurred while submitting reservation");
   }
 };
   return (
@@ -48,14 +48,14 @@ export default function Reserve() {
         </h1>
 
         <p className="text-center text-gray-400 mb-6">
-          رزرو وقت آنلاین
+          online reservation form  
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
 
           <input
             type="text"
-            placeholder="نام شما"
+            placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="w-full p-3 rounded-lg bg-black border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"
@@ -63,25 +63,25 @@ export default function Reserve() {
 
           <input
             type="text"
-            placeholder="شماره تلفن"
+            placeholder="Phone Number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="w-full p-3 rounded-lg bg-black border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"
           />
 
-          {/* خدمات */}
+          {/* service */}
           <select
             value={service}
             onChange={(e) => setService(e.target.value)}
             className="w-full p-3 rounded-lg bg-black border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"
           >
-            <option>اصلاح مو</option>
-            <option>اصلاح ریش</option>
-            <option>اصلاح + ریش</option>
-            <option>رنگ مو</option>
+            <option>Haircut</option>
+            <option>Beard Trim</option>
+            <option>Haircut + Beard Trim</option>
+            <option>Hair Dye</option>
           </select>
 
-          {/* تاریخ */}
+          {/* date */}
           <input
             type="date"
             value={date}
@@ -89,7 +89,7 @@ export default function Reserve() {
             className="w-full p-3 rounded-lg bg-black border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"
           />
 
-          {/* ساعت */}
+          {/* time */}
           <input
             type="time"
             value={time}
@@ -101,7 +101,7 @@ export default function Reserve() {
             type="submit"
             className="w-full bg-yellow-500 text-black py-3 rounded-lg font-bold hover:bg-yellow-400 transition"
           >
-            ثبت رزرو
+            Book Reservation
           </button>
         </form>
       </div>

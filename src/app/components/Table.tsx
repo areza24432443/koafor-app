@@ -25,12 +25,12 @@ export default function Table({
       <table className="w-full border text-white border-gray-700">
         <thead>
           <tr className="bg-zinc-800">
-            <th className="p-3">نام</th>
-            <th className="p-3">شماره</th>
-            <th className="p-3">خدمات</th>
-            <th className="p-3">تاریخ</th>
-            <th className="p-3">ساعت</th>
-            <th className="p-3">عملیات</th>
+            <th className="p-3">Name</th>
+            <th className="p-3">Phone</th>
+            <th className="p-3">Service</th>
+            <th className="p-3">Date</th>
+            <th className="p-3">Time</th>
+            <th className="p-3">Actions</th>
           </tr>
         </thead>
 
@@ -47,7 +47,7 @@ export default function Table({
                   onClick={() => handleDelete(item.id)}
                   className="bg-red-500 px-3 py-1 rounded hover:bg-red-400"
                 >
-                  حذف
+                  Delete
                 </button>
               </td>
             </tr>

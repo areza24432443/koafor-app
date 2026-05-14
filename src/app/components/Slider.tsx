@@ -45,7 +45,7 @@ function Slider() {
             <h1 className='text-5xl uppercase text-center p-4 md:text-6xl lg:text-7xl'>{data[currentSlider].title}</h1>
 
             <Link href="/reserve">
-        <button className='bg-red-500 text-white rounded-md px-4 py-2 cursor-pointer'>رزرو وقت</button>
+        <button className='bg-red-500 text-white rounded-md px-4 py-2 cursor-pointer'>Book Appointment</button>
       </Link>
 
         </div>

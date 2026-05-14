@@ -1,13 +1,13 @@
 import prisma from "@/lib/prisma";
 import { NextResponse } from "next/server";
 
-// گرفتن لیست رزروها
+//  list all reservations 
 export async function GET() {
   const data = await prisma.reservation.findMany();
   return NextResponse.json(data);
 }
 
-// ثبت رزرو
+// receive reservation id and delete the reservation 
 export async function POST(req: Request) {
   const body = await req.json();
 
