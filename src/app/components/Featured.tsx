@@ -31,7 +31,7 @@ import { featuredItems } from '@/data';
 //         </div>
 //    </div>   
      
-<div className="w-screen overflow-x-auto text-red-500">
+<div className="w-screen overflow-x-auto text-blue-500">
 
     <div className=" flex items-center justify-center gap-8">
          
